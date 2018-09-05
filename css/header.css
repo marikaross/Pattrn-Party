@@ -43,3 +43,51 @@
 .header-bar h2 {
   color: #000000;
 }
+
+@media only screen and (max-width: 1120px) {
+  .header-bar nav,
+  .header-bar input {
+    display: none;
+  }
+
+  .header-bar {
+    display: grid;
+    grid-template-rows: 120px 1fr 1fr;
+    grid-template-columns: 120px 1fr;
+  }
+
+  .header-bar button {
+    background: none;
+    border: none;
+    color: #666666;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 300;
+    margin: 0;
+    width: 50px;
+  }
+
+  .taller {
+    height: 375px;
+  }
+
+  nav.big-menu {
+    background-color: #d1d2d3;
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/1/3/3;
+  }
+
+  input.big-menu {
+    border: 20px solid #66666;
+    display: block;
+    grid-area: 3/1/4/3;
+    margin 0
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .header-bar {
+    margin: 0 30px;
+  }
+}

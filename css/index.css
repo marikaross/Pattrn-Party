@@ -8,6 +8,12 @@ body {
   margin: 0 auto;
 }
 
+.view-code {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1.5em;
+}
+
 
 section {
   display: flex;
@@ -159,7 +165,9 @@ button {
 
 
 
-
+@media only screen and (max-width: 1200px) {
+  
+}
 @media only screen and (max-width: 600px) {
 
   .input:checked + .label + .panel {
